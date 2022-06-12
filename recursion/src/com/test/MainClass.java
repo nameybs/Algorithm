@@ -49,22 +49,19 @@ public class MainClass {
 		System.out.println(solution_70.climbStairs(2));
 		System.out.println(solution_70.climbStairs(1));
 		
+		System.out.println("==== бс Solution21 ====");
 		Solution_21 solution_21 = new Solution_21();
 		ListNode node_21_1 = new ListNode(1);
 		node_21_1.next = new ListNode(2);
 		node_21_1.next.next = new ListNode(4);
 		node_21_1.next.next.next = new ListNode(8);
 		node_21_1.next.next.next.next = new ListNode(9);
-
-		System.out.println("==== бс Solution21 ====");
 		ListNode node_21_2 = new ListNode(1);
 		node_21_2.next = new ListNode(3);
 		node_21_2.next.next = new ListNode(4);
 		node_21_2.next.next.next = new ListNode(7);
 		node_21_2.next.next.next.next = new ListNode(9);
-		
 		ListNode node_21_3 = new ListNode(0);
-		
 		UtilClass.printList(solution_21.mergeTwoLists(node_21_1, node_21_2));
 		UtilClass.printList(solution_21.mergeTwoLists(null, null));
 		UtilClass.printList(solution_21.mergeTwoLists(null, node_21_3));
